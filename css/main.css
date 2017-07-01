@@ -374,16 +374,12 @@ body {
  color: black;
 }
 
-#formview{
-	width: 100%;
-}
 
-
-@media (min-width:992px) {
+/* @media (min-width:992px) { */
 #formview{
-	width: 70%;
+	width: 40%;
 }
-}
+/* } */
 
 #formview textarea {
     height: 10.3em;
@@ -396,10 +392,11 @@ input, textarea {
     background: #fff;
     padding: 0.9em;
     transition: all 0.3s ease-in-out;
-    width: 50%;
+    width: 100%;
+	box-sizing: border-box;
 }
 
-button, a.button {
+#formview button, a.button {
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 600;
@@ -409,4 +406,10 @@ button, a.button {
     line-height: 1em;
     padding: 0.6em 0.9em;
     transition: all 0.3s ease-in-out;
+}
+
+@media (min-width:768px) {
+#formview button{
+	margin-right: 40%;
+}
 }
