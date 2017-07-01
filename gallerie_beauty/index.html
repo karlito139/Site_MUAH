@@ -1,0 +1,139 @@
+---
+layout: page
+active: gallerie_beauty
+album-title: "Beauty"
+images:
+ - image_path: /gallerie_beauty/img/ABP2016_DIANE M_0130_CARMEN B_1558.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/JHP2016_DianeM_0601_MathildeA-6 copie copie.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/CLP2016_DianeM_0329_FannyR_0020_1.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/CLP2016_DianeM_0202_CamilleT_0065_1.jpg
+   copyright:
+ - image_path: /gallerie_beauty/img/JHP2017_DianeM_0110_SarahO-PhebeB_7838 copie - copie_2.jpg
+   copyright:    
+ - image_path: /gallerie_beauty/img/JHP2017_DianeM_0110_PhebeB_7934 copie - copie_2.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/DSC_9160v2bordurenoire--.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/DSC_9391.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/DSC_9312.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/DSC_9248.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/JHP2017_DianeM_0110_SarahO_8053 copie - copie_2r.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/2016 Chloe K VE 6762.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/15012017-DR1A3747.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/DSC_9192.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/paris-ml-_A7A3624rweb.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/paris-ml-_A7A3495web.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/15292899_1776453272616302_1572315166_o.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/P1010495+.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/P1010962r.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/paris-ml-_A7A3469r2jpeg.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/P1010985r.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/Sarah.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/Giedre (29)2.jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/Chloe (1).jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/Giedre (37).jpg
+   copyright: 
+ - image_path: /gallerie_beauty/img/Chloe (11).jpg
+   copyright:    
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+	<br><br>
+
+
+
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="">
+<img src="{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary" id="{{ image.caption }}">
+							<h3>{{image.caption}}</h3>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+
+			</div>
+
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+         type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+image: {
+      titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    
+</body></html>
