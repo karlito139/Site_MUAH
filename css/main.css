@@ -375,6 +375,13 @@ body {
 }
 
 .about{
+	width: 70%;
+}
+
+@media (min-width:768px) { 
+.about{
+	width: 40%;
+}
 }
 
 /* @media (min-width:992px) { */
