@@ -19,11 +19,11 @@ owner:
 
 # Internal nav
 nav:
-  - BEAUTY: "gallerie_beauty/"  
-  - FASHION: "gallerie_fashion/"  
-  - ARTISTIQUE: "gallerie_artistique/"  
-  - MARIAGE: "gallerie_mariage/"  
-  - DIVERS: "gallerie_divers/"  
+  - BEAUTY: "galerie_beauty/"  
+  - FASHION: "galerie_fashion/"  
+  - ARTISTIQUE: "galerie_artistique/"  
+  - MARIAGE: "galerie_mariage/"  
+  - DIVERS: "galerie_divers/"  
   - ABOUT: "about/"
   - CONTACT: "contact/"  
  

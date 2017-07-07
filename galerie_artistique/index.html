@@ -1,24 +1,54 @@
 ---
 layout: page
-active: gallerie_divers
-album-title: "Relooking - Mise en beauté"
+active: galerie_artistique
+album-title: Artistique
 images:
- - image_path: /gallerie_divers/Relooking-Mise_en_beaute/img/montage mise en beauté.jpg
+ - image_path: /galerie_artistique/img/CLP2016_DianeM_0523_AbigailM_0017_2.jpg
    copyright:
- - image_path: /gallerie_divers/Relooking-Mise_en_beaute/img/Montage (2).jpg
+ - image_path: /galerie_artistique/img/CLP2016_DianeM_0330_BaptisteJ_0034_1.jpg
    copyright:
- - image_path: /gallerie_divers/Relooking-Mise_en_beaute/img/Montage.jpg
+ - image_path: /galerie_artistique/img/P10105682.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/JHP2017_DianeM_0418_CecileB_0028r.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/JHP2017_DianeM_0419_AnaisC_0002 copie - copie_2r.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/CLP2016_DianeM_0329_YsabelleP_0020_1.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/ALX_1157r.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/ALX_1154r.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/P1010549++.jpg
    copyright:
- - image_path: /gallerie_divers/Relooking-Mise_en_beaute/img/Montage3.jpg
-   copyright:
- - image_path: /gallerie_divers/Relooking-Mise_en_beaute/img/20160619_141810 avant.jpg
-   copyright:
- - image_path: /gallerie_divers/Relooking-Mise_en_beaute/img/P6290001.jpg
-   copyright:
- - image_path: /gallerie_divers/Relooking-Mise_en_beaute/img/Sans titre-1.jpg
-   copyright:
- - image_path: /gallerie_divers/Relooking-Mise_en_beaute/img/ol.jpg
-   copyright:
+ - image_path: /galerie_artistique/img/P1000630.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/Retouche by me 2.jpg
+   copyright: Make up - Elodie Fouet & Coiffure - Diane Martin 
+ - image_path: /galerie_artistique/img/13711600_10209782354372952_104007564_o.jpg
+   copyright: Make up - Elodie Fouet & Coiffure - Diane Martin
+ - image_path: /galerie_artistique/img/P1010132.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/P1000831.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/Celine.jpg
+   copyright: Make up - David Barral & Coiffure - Diane Martin
+ - image_path: /galerie_artistique/img/diane (67 sur 177).jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/P1020019r2.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/Diane-5 HD version.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/Diane HD version 2016web.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/P1010795 (3).jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/P1010882r2.jpg
+   copyright: 
+ - image_path: /galerie_artistique/img/P1010420bis2.jpg
+   copyright: Make up - Lina Trabelsi & Coiffure - Diane Martin
+ - image_path: /galerie_artistique/img/13518198_10209586439115193_936941855_o.jpg
+   copyright: Make up - Elodie Fouet & Coiffure - Diane Martin
 
 ---
 
@@ -32,7 +62,6 @@ images:
 	<section id="content" role="main">
 		<div class="wrapper">
 	<br><br>
-			<h2>{{page.album-title}}</h2>
 
 
 			<!-- Gallery __-->
@@ -41,7 +70,7 @@ images:
 {% for image in page.images %}  		
 
 				<figure class="gallery-item">
-					<header class='gallery-icon'>
+					<header class="gallery-icon">
 
 <a href="{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.baseurl }}{{ image.image_path }}"></a>

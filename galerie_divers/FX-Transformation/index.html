@@ -1,48 +1,29 @@
 ---
 layout: page
-active: gallerie_fashion
-album-title: "Fashion"
+active: galerie_divers
+header-img: "img/gallery-bg.jpg"
+album-title: "FX - Transformation"
 images:
- - image_path: /gallerie_fashion/img/15271327_1775086372752992_256773552_o.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/15233681_1774906626104300_652400842_o.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/15012017-DR1A3620.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Barock-0.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Barock-1.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Barock-6.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/15012017-DR1A3749.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/IMG0112.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/CyBourguet_Elisedarjo_21.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/CyBourguet_Elisedarjo_30.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/CyBourguet_Elisedarjo_29.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/13613603_934205856702035_1010977054550127255_o.jpg
-   copyright: Makeup - Anne-Sophie Le Gallo et Anna Fujiwara & Coiffure - Diane Martin
- - image_path: /gallerie_fashion/img/13718161_10209782353332926_406932684_o.jpg
-   copyright: Make up - Elodie Fouet & Coiffure - Diane Martin
- - image_path: /gallerie_fashion/img/Le-lancaster-0.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Le-lancaster-1.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Le-lancaster-2.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Le-lancaster-3.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Le-lancaster-4.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Le-lancaster-5.jpg
-   copyright: 
- - image_path: /gallerie_fashion/img/Le-lancaster-6.jpg
-   copyright: 
+ - image_path: /galerie_divers/FX-Transformation/img/ABP2016_DIANE M_0222_ANNIE S-8.jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/ABP2016_DIANE M_0222_ANNIE S-177.jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/ABP2016_DIANE M_0222_ANNIE S-147.jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/20170218_143533.jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/SHD_IMG_0065_2017-02-18-10-03-04.jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/20170412_122239(0).jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/19400694_10211374895942671_1504328158_o.jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/20170216_143910.jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/20170216_115009.jpg
+   copyright:
+ - image_path: /galerie_divers/FX-Transformation/img/20170216_160559.jpg
+   copyright:
 
 ---
 
@@ -56,6 +37,7 @@ images:
 	<section id="content" role="main">
 		<div class="wrapper">
 	<br><br>
+			<h2>{{page.album-title}}</h2>
 
 
 			<!-- Gallery __-->
@@ -114,7 +96,7 @@ images:
        },
       image: {
          titleSrc: function(item) {
-             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
             }
         }
           // other options
